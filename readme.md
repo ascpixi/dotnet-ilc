@@ -8,6 +8,11 @@ dotnet tool install -g ilc
 
 The tool will automatically retrieve the right versions based on the .NET runtime that is used to invoke the tool. This means that you might experience a measurable delay the first time you launch the tool with a new .NET version.
 
+## Use-cases
+This tool is mainly intended for use when compiling with a custom set of runtime libraries and/or assemblies. If you wish to compile with .NET's runtime libraries, it's recommended to use a regular .NET project. Alternatively, you can reference the assemblies from the coressponding `runtime.<rid>.microsoft.dotnet.ilcompiler` packages, where `<rid>` is the runtime identifier of the **target** operating system.
+
+If you're using C#, you can also check out [bflat](https://flattened.net/), which also uses `ilc` under the hood, but automatically compiles C# files to IL assemblies.
+
 ## Why a wrapper?
 The internal NuGet packages used to store `ilc` - `runtime.<rid>.microsoft.dotnet.ilcompiler` - are meant to be used as project dependencies. These packages also supply various build specification files, which reference the stored `ilc` binary.
 
