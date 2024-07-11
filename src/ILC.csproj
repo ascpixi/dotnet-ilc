@@ -22,7 +22,7 @@
         <Description>Provides a .NET tool wrapper to access ilc (the IL compiler), used for native AOT (NAOT) compilation.</Description>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/ascpixi/dotnet-ilc</PackageProjectUrl>
-        <Tags>ilc;ilcompiler;compiler;nativeaot;naot;native;aot</Tags>
+        <PackageTags>ilc;ilcompiler;compiler;nativeaot;naot;native;aot</PackageTags>
         <RepositoryUrl>https://github.com/ascpixi/dotnet-ilc</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageIcon>icon.png</PackageIcon>
