@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <InvariantGlobalization>true</InvariantGlobalization>
+
+        <!-- The earliest version that has ILCompiler packages is .NET 7.0. -->
+        <TargetFrameworks>net7.0;net8.0;net9.0</TargetFrameworks>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <AssemblyName>ilc-wrapper</AssemblyName>
+        <ToolCommandName>ilc</ToolCommandName>
+        <PackAsTool>true</PackAsTool>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageId>ilc</PackageId>
+        <Authors>dotnetframework</Authors>
+        <Description>Provides a .NET tool wrapper to access ilc (the IL compiler), used for native AOT (NAOT) compilation.</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/ascpixi/dotnet-ilc</PackageProjectUrl>
+        <Tags>ilc;ilcompiler;compiler;nativeaot;naot;native;aot</Tags>
+        <RepositoryUrl>https://github.com/ascpixi/dotnet-ilc</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageIcon>icon.png</PackageIcon>
+        <PackageReadmeFile>readme.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="./icon.png" Pack="true" PackagePath="/" />
+        <None Include="../readme.md" Pack="true" PackagePath="/" />
+    </ItemGroup>
+
+</Project>
